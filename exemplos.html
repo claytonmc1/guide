@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script>
+		function Pessoa(nome, sobrenome) {
+			if (!(this instanceof arguments.callee)) {
+				return new Pessoa(nome, sobrenome);
+			}
+
+			this.name = nome +" "+ sobrenome;
+		}
+
+
+	</script>
+</body>
+</html>
